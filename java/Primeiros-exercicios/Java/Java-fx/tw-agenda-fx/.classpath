@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="resources"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/tw-agenda-entidades"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/tw-agenda-repositorios"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/tw-agenda-servlets"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Daniel Silva/OneDrive/Cursos_exercicios/TreinaWeb/Java/Java-fx/libs/mysql-connector-java-8.0.13.jar"/>
+	<classpathentry kind="lib" path="/tw-agenda-entidades/src"/>
+	<classpathentry kind="lib" path="/tw-agenda-servlets/src"/>
+	<classpathentry kind="lib" path="/tw-agenda-entidades/bin"/>
+	<classpathentry kind="lib" path="/tw-agenda-repositorios/bin"/>
+	<classpathentry kind="lib" path=".classpath"/>
+	<classpathentry kind="lib" path=".project"/>
+	<classpathentry kind="lib" path="build.fxbuild"/>
+	<classpathentry kind="lib" path=".settings/org.eclipse.jdt.core.prefs"/>
+	<classpathentry kind="lib" path="resources/application.properties"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Servlets/WebContent/WEB-INF/ExercicioLogin&apos; to &apos;exercicioLogin&apos;" description="Rename resource &apos;ExercicioLogin&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/WEB-INF/ExercicioLogin" name="exercicioLogin" stamp="1545340744107" updateReferences="true"/>
+</session>

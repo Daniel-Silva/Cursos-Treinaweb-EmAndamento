@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/tw-agenda-entidades"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Daniel Silva/OneDrive/Cursos_exercicios/TreinaWeb/Java/Java-fx/libs/mysql-connector-java-8.0.13.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Daniel Silva/OneDrive/Cursos_exercicios/TreinaWeb/Java/Java-fx/libs/jstl-1.2.jar"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/tw-agenda-fx"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/tw-agenda-servlets"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<form method="POST" action="produto_add.jsp">
+			<div>
+				<input type="text" name="produto" placeholder="Nome do Produto" />
+			</div>
+			<div>
+				<input type="text" name="valor" placeholder="Valor do Produto" />
+			</div>
+			<div>
+				<input type="submit" value="Cadastrar Produto" />
+			</div>
+		</form>
+	</body>
+</html>

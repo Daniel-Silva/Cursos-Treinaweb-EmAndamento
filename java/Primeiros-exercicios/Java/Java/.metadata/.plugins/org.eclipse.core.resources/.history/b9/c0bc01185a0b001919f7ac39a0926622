@@ -1,0 +1,58 @@
+package br.com.treinaweb.mercado.view;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import br.com.fiap.mercado.conexao.Conexao;
+
+
+public class TesteCrudDinamico {
+
+	public static void main(String[] args) {
+		try {
+
+			Connection conexao = Conexao.obterConexao();
+			
+			
+			PreparedStatement pstmt = conexao.prepareStatement("INSERT INTO T_PRODUTO (CD_PRODUTO, NM_PRODUTO, VL_PRODUTO, DT_VALIDADE)" +
+								" VALUES (SQ_T_PRODUTO.NEXTVAL, ?, ?, ?");
+			
+			
+			pstmt.setString(1, "Pera");
+			pstmt.setFloat(2, 7);
+			java.sql.Date dt = new java.sql.Date(new java.util.Date().getTime());
+			pstmt.setDate(3, dt);
+			pstmt.executeUpdate();
+
+			
+			pstmt = conexao.prepareStatement("UPDATE T_PRODUTO SET VL_PRODUTO = ? WHERE CD_PRODUTO = ?");
+			pstmt.setFloat(1, 8);
+			pstmt.setInt(2, 3);
+			pstmt.executeQuery();
+			
+			
+			pstmt = conexao.prepareStatement("SELECT * FROM T_PRODUTO WHERE CD_PRODUTO = ?");
+			pstmt.setInt(1, 2);			
+			ResultSet result = pstmt.executeQuery();
+			
+					
+			while(result.next()) {
+				System.out.println(	result.getInt("CD_PRODUTO") + " " +
+									result.getString("NM_PRODUTO") + " " +
+									result.getDouble("VL_PRODUTO") + " " +
+									result.getDate("DT_VALIDADE"));
+			}
+			
+			conexao.close();
+
+		} catch (SQLException e) {
+			System.err.print("Não foi possível conectar no ORACLE FIAPON");
+			e.printStackTrace();
+		}
+
+	}
+
+}

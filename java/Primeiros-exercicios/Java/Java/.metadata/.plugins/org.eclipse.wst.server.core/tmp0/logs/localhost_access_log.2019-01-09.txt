@@ -1,0 +1,5 @@
+127.0.0.1 - - [09/Jan/2019:18:48:41 -0200] "GET / HTTP/1.1" 404 1086
+127.0.0.1 - - [09/Jan/2019:18:48:53 -0200] "GET / HTTP/1.1" 404 1086
+0:0:0:0:0:0:0:1 - - [09/Jan/2019:18:48:54 -0200] "GET /FIAP_FASE7/Produto_Exercicio/form_produto.html HTTP/1.1" 200 469
+0:0:0:0:0:0:0:1 - - [09/Jan/2019:18:49:38 -0200] "GET /FIAP_FASE7/Produto_Exercicio/teste.jsp HTTP/1.1" 200 133
+0:0:0:0:0:0:0:1 - - [09/Jan/2019:18:50:01 -0200] "GET /FIAP_FASE7/Produto_Exercicio/teste.jsp HTTP/1.1" 200 148
