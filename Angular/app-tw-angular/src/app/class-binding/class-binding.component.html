@@ -1,0 +1,17 @@
+<p>
+  class-binding works!
+</p>
+
+<select (change)="0" #minhaClass >
+  <option value="1">Classe 1</option>
+  <option value="2">Classe 2</option>
+  <option value="3">Classe 3</option>
+  <option value="4">Classe 4</option>
+</select>
+
+<div
+  [class.classe1]="minhaClass.value == 1"
+  [class.classe2]="minhaClass.value == 2"
+  [class.classe3]="minhaClass.value == 3"
+  [class.classeMaior]="minhaClass.value > 1"
+>Classes</div>

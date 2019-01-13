@@ -1,0 +1,13 @@
+<h1>
+  Usando ngIf e ngElse
+</h1>
+<!--Usando ngIf e ngElse-->
+<p *ngIf="isVisible; else isNotVisible">
+  {{ngIf}}
+</p>
+<ng-template #isNotVisible>
+  <p>
+    {{ngElse}}
+  </p>
+</ng-template>
+

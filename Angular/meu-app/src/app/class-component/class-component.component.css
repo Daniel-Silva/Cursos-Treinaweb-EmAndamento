@@ -1,0 +1,56 @@
+.classe1 {
+  background-color: aqua;
+  transition: .5s;
+}
+
+.classe2 {
+  background-color: lightslategrey;
+  transition: .8s;
+}
+
+.classe3 {
+  background-color: aquamarine;
+  font-size: 2.5em;
+  transition: .2s;
+}
+
+.classeMaior1 {
+  border-bottom: 2px solid red;
+  transition: .9s;
+}
+
+.classVermelho {
+  display: block;
+  width: 250px;
+  height: 150px;
+  text-align: center;
+  color: #FFF;
+  background: red;
+  transition: .9s;
+}
+
+.classRosa {
+  display: block;
+  width: 350px;
+  height: 250px;
+  text-align: center;
+  color: #FFF;
+  font-size: 1.6em;
+  background-color: deeppink;
+  transition: .9s;
+}
+
+.classAzul {
+  display: block;
+  width: 150px;
+  height: 50px;
+  color: #FFF;
+  text-align: justify;
+  background-color: blue;
+  transition: .9s;
+}
+
+.classComplement {
+  border-bottom: 5px solid #000;
+  transition: .9s;
+}

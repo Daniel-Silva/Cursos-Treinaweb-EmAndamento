@@ -1,0 +1,41 @@
+<!-- Interpolação Bainging -->
+<p>
+  {{ nome}}
+  {{aluno?.dados?.nome}} <!-- Operador Elvis -->
+</p>
+
+<h1 *ngIf="isVisible; else condicaoFalsa">
+  {{meuNome}}
+</h1>
+
+<ng-template #condicaoFalsa>
+  <p>Outro TEXTO</p>  
+</ng-template>
+
+<ul>
+  <li *ngFor="let item of myList" >Item {{ item }}</li>
+</ul>
+
+<div [ngSwitch]="myValue">
+  <div *ngSwitchCase="1">Valor 1</div>
+  <div *ngSwitchCase="2">Valor 2</div>
+  <div *ngSwitchCase="3">Valor 3</div>
+  <div *ngSwitchCase="4">Valor 4</div>
+</div>
+
+
+
+<!-- Propert Bainding -->
+
+<img [src]="imgSrc" />
+
+
+<!-- Event Binding -->
+
+<button (click)="handleClick()">Clique aqui!</button><br>
+
+<!-- Fluxo bidirecional -->
+
+<input type="text" [value]="aluno.dados.nome" (input)="nome = $event.target.value" />
+<input type="text" [ngModel]="nome" (ngModelChange)='nome = $event' />
+<input type="text" [(ngModel)]="nome" />

@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\pokedex",
+    "\\src\\app\\pokedex\\list",
+    "\\src\\app\\services"
+  ],
+  "SelectedNode": "\\src\\app\\services\\pokeapi.service.ts",
+  "PreviewInSolutionExplorer": false
+}

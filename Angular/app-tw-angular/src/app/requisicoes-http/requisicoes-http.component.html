@@ -1,0 +1,9 @@
+<p>
+  requisicoes-http works!
+</p>
+
+<input type="text" [(ngModel)]="searchText" (keyup.enter)="getProject()"/>
+
+<ul>
+  <li *ngFor="let project of projects"> Name: {{project.full_name}}</li>
+</ul>

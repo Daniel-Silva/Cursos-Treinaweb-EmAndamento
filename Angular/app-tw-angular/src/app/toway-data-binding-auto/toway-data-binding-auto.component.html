@@ -1,0 +1,7 @@
+<p>
+  toway-data-binding-auto {{nome}}!
+</p>
+
+<input type="text" [ngModel]='nome' (ngModelChange)="nome = $event" /> 
+<!--Ou-->
+<input type="text" [(ngModel)]='nome' />
